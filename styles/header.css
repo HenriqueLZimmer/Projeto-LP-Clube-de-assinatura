@@ -1,0 +1,33 @@
+body div img{
+    display: flex;
+    position: absolute;
+}
+
+header{
+    display: flex;
+    max-width: 1120px;
+    width: 100%;
+
+    position: relative;
+    margin-inline: 160px;
+    padding-top: 56px;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    
+    & a{
+        & img{
+            width: 230px;
+            height: 58px;
+        }
+
+        & span{
+            font: var(--body-sm);
+            color: var(--text-title);
+            background-color: var(--pink-dark);
+            border-radius: .5rem;
+            
+            padding: 12px 20px;
+        }
+    }
+}
