@@ -72,8 +72,24 @@ p{
     color: var(--text-body);
 }
 
+.mobile-only{
+    display: none;
+}
+
 @media (width < 80em){
+
+    /* *, *::after, *::before{
+    
+        max-width: 23.4375rem;
+    } */
+
     :root{
-       max-width: 23.4375rem;
+       
+       --text-lg: 700 1.75rem var(--ff-base);
+
+       --body-lg: 700 .825rem/1.4 var(--ff-base);
+
+       --text-subtitle: 500 1rem/2 var(--ff-base);
+
     }
 }

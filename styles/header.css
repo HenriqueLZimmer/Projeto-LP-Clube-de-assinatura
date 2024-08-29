@@ -33,3 +33,25 @@ header{
         }
     }
 }
+
+@media (width < 80em){
+    header{
+        padding: 1.25rem 1.25rem;
+        margin: 0;
+    }
+
+    .mobile-only{
+        display: block;
+        width: 4.03rem;
+    }
+
+    header img:not(.mobile-only) {
+        display: none;
+    }
+
+    .img-header{
+        border: 1px solid green;
+        align-items: center;
+        max-width:max-content;
+    }
+}
