@@ -1,0 +1,45 @@
+.subtitle{
+    position: relative;
+
+    margin-top: 24.75rem;
+    margin-inline: 7.5rem;
+    width: 71rem;
+
+    & p{
+        font: var(--text-subtitle);
+        text-align: center;
+        & span{
+            font: var(--text-subtitle);
+            color: var(--blue-light);
+        }
+    }
+
+    & img{
+        object-fit: cover;
+    }
+
+    & img[src*="opened"]{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    & img[src*="ouija"]{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    & img[src*="crystal"]{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .book-opened{
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-mistery{
+        display: flex;
+        justify-content: space-between;
+    }
+}

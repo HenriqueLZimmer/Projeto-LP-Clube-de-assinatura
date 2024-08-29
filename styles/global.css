@@ -67,6 +67,11 @@ a{
     text-decoration: none;
 }
 
+p{
+    font: var(--body-lg);
+    color: var(--text-body);
+}
+
 @media (width < 80em){
     :root{
        max-width: 23.4375rem;
