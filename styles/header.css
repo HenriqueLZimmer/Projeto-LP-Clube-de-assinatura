@@ -1,14 +1,23 @@
+.header{
+    border: 1px solid green;
+
+    & img[src*="hero-background"]{
+        display: inside;
+        position: absolute;
+        top: 0;
+    }
+}
+
 header{
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
 
     margin-inline: 10rem;
     margin-top: 3.5rem;
 
-
-
-    border: 1px solid green;
+    z-index: 10;
 
     & div img{
         width: 14.375rem;

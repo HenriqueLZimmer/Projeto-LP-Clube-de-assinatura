@@ -1,8 +1,15 @@
 .hero{
-    border: 1px solid green;
+    border: 1px solid purple;
+
     display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     position: relative;
+    margin-top: 278px;
+    width: 656px;
+    margin-inline: 392px;
+    z-index: 1;
 
     & h1{
         width: 656px;
@@ -13,10 +20,6 @@
     & p{
         width: 568px;
         margin-inline: 436px;
-    }
-
-    & img[src*="hero-background"]{
-
     }
 }
 

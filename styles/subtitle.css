@@ -1,8 +1,11 @@
 .mistery{
+    border: 1px solid green;
     width: 1200px;
     height: 400px;
     margin-inline: 120px;
     padding-top: 96px;
+    margin-top: 340px;
+    position: relative;
 
     & .subtitle{
         display: grid;
@@ -44,3 +47,4 @@
         }    
     }
 }
+
