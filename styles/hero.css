@@ -1,2 +1,22 @@
+.hero{
+    border: 1px solid green;
+    display: flex;
+    text-align: center;
+    position: relative;
 
+    & h1{
+        width: 656px;
+        margin-inline: 392px;
+        padding-bottom: 32px;
+    }
+
+    & p{
+        width: 568px;
+        margin-inline: 436px;
+    }
+
+    & img[src*="hero-background"]{
+
+    }
+}
 

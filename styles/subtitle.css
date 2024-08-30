@@ -1,0 +1,46 @@
+.mistery{
+    width: 1200px;
+    height: 400px;
+    margin-inline: 120px;
+    padding-top: 96px;
+
+    & .subtitle{
+        display: grid;
+        grid-template-areas: 
+        "A"
+        "B";
+        align-items: center;
+        justify-items: center;
+
+        & img[src*="opened"]{
+            grid-area: A;
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+
+        & p{
+        grid-area: B;
+        font: var(--text-subtitle);
+        text-align: center;
+        margin-inline: 32px;
+        }
+
+    }
+
+    .img-mistery{
+        display: flex;
+        justify-content: space-between;
+
+        & img[src*="ouija"]{
+            width: 5rem;
+            height: 5rem;
+            margin-left: 33.96px;
+        }
+
+        & img[src*="crystal"]{
+            width: 4.5rem;
+            width: 4.5rem;
+            
+        }    
+    }
+}
