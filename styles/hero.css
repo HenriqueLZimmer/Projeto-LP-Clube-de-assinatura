@@ -1,13 +1,2 @@
-& .hero{
-    position: relative;
 
-    text-align: center;
-    width: 41rem;
-    margin-inline: 24.5rem;
-    margin-top: 5rem;
-
-    & p{
-        padding-top: 2rem;
-    }
-}
 
