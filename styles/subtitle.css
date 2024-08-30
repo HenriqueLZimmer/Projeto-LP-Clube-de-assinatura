@@ -1,5 +1,5 @@
-.mistery{
-    border: 1px solid green;
+& .mistery{
+    /* border: 1px solid green; */
     width: 1200px;
     height: 400px;
     margin-inline: 120px;
@@ -19,6 +19,8 @@
             grid-area: A;
             width: 5.5rem;
             height: 5.5rem;
+
+            transform: rotate(20deg);
         }
 
         & p{
@@ -30,7 +32,7 @@
 
     }
 
-    .img-mistery{
+    & .img-mistery{
         display: flex;
         justify-content: space-between;
 
@@ -38,11 +40,18 @@
             width: 5rem;
             height: 5rem;
             margin-left: 33.96px;
+            margin-top: 10px;
+
+            transform: rotate(100deg);
         }
 
         & img[src*="crystal"]{
             width: 4.5rem;
             width: 4.5rem;
+
+            margin-top: 10px;
+
+            transform: rotate(-20deg);
             
         }    
     }

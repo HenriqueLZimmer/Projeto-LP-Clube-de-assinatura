@@ -46,7 +46,12 @@
 
 body{
     background-color: var(--shape-background);
-    border: 1px solid white;
+    /* border: 1px solid white; */
+
+    align-items: center;
+    justify-content: center;
+
+    /* margin-left: 300px; */
 }
 
 h1{
