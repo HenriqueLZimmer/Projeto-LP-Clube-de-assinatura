@@ -1,0 +1,20 @@
+.title{
+    position: relative;
+    margin-left: -170px;
+    margin-top: -650px;
+    margin-bottom: 429px;
+
+    h1{
+        width: 656px;
+        text-align: center;
+        margin-inline: 392px;
+    }
+
+    p{
+        text-align: center;
+        width: 568px;
+        margin-inline: 436px;
+
+        margin-top: 32px;
+    }
+}

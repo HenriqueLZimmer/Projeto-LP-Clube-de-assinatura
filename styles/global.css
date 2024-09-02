@@ -3,13 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 
+}
 
+:root{
+    /* colors */
+    --pink-light:#C59DD2;
+    --pink-base:#9547A5;
+    --pink-dark:#7D298A;
+    --pink-low:#3F0F41;
+    --blue-light:#73B6D2;
+    --blue-base:#358BB9;
+    --blue-mid:#2374A4;
+    --blue-dark:#144A72;
+    --blue-low:#08233C;
+    --shape-stroke:#002347;
+    --shape-hover:#001933;
+    --shape-base:#000F1F;
+    --shape-background:#00050A;
+    --text-title:#F8FBFB;
+    --text-body:#E2E7E9;
+    --text-label:#BAC6C9;
+
+    /* font family */
+    --ff-base: "Raleway", sans-serif;
+
+    --text-xs: 700 1rem var(--ff-base);
+    --text-sm: 700 2rem var(--ff-base);
+    --text-md: 700 2.5rem var(--ff-base);
+    --text-lg: 700 3rem var(--ff-base);
+
+    --text-subtitle: 500 2rem/2 var(--ff-base);
+    --text-link: 500 0.875rem var(--ff-base);
+    --text-tag: 700 0.875rem var(--ff-base);
+    --text-button: 700 0.625rem var(--ff-base);
+
+    --body-xs: 700 0.75rem/1.4 var(--ff-base);
+    --body-sm: 700 0.875rem/1.4 var(--ff-base);
+    --body-md: 700 1rem/1.4 var(--ff-base);
+    --body-lg: 700 1.25rem/1.4 var(--ff-base);
 }
 
 body{
+    background-color: var(--shape-background);
     display: flex;
     position: relative;
-    border: 5px solid green;
+    border: 5px solid orange;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -17,4 +55,60 @@ body{
 
 .flex{
     display: flex;
+}
+
+h1{
+    font: var(--text-lg);
+    color: var(--text-title);
+}
+
+h2{
+    font: var(--text-sm);
+    color: var(--text-title);
+}
+
+span{
+    font: var(--body-md);
+}
+
+strong{
+    font: var(--text-subtitle);
+    color: var(--blue-light);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+p{
+    font: var(--body-lg);
+    color: var(--text-body);
+}
+
+.mobile-only{
+    display: none;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+@media (width < 80em){
+
+    /* *, *::after, *::before{
+    
+        max-width: 23.4375rem;
+    } */
+
+    :root{
+       
+       --text-lg: 700 1.75rem var(--ff-base);
+
+       --body-lg: 700 .825rem/1.4 var(--ff-base);
+
+       --text-subtitle: 500 1rem/2 var(--ff-base);
+
+    }
 }

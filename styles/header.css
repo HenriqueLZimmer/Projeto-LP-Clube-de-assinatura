@@ -1,34 +1,35 @@
-
-.img-background{
-    position: absolute;
-    margin-left: -170px;
-}
-
 header{
-}
+    height: 948px;
 
-.header{
-    border: 5px solid green;
-    position: relative;
-
-    width: 1120px;
-    margin-top: 56px;
-
-    justify-content: space-between;
-    align-items: center;
-
-    img{
-        width: 230px;
-        height: 58px;
+    & .img-background{
+        position: absolute;
+        margin-left: -170px;
     }
 
-    button{
-        height: 40px;
-        border-radius: 8px;
+    & .header{
+        position: relative;
 
-        background-color: #7d298a;
-        color: #f8fbfb;
+        width: 1120px;
+        height: 58px;
+        margin-top: 56px;
 
-        padding: 12px 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        & img{
+            width: 230px;
+            height: 58px;
+        }
+
+        & .btn{
+            height: 40px;
+            border-radius: 8px;
+
+            font: var(--body-sm);
+            color: var(--text-title);
+            background-color: var(--pink-dark);
+
+            padding: 12px 20px;
+        }
     }
 }

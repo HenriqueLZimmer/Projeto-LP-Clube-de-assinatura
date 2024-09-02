@@ -1,0 +1,34 @@
+.subtitle{
+    margin-left: -45px;
+    padding-top: 96px;
+    width: 1200px;
+
+    & img[src*="opened"]{
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+
+        padding-top: 8.26px;
+    }
+
+    & p{
+        padding-inline: 32px;
+        font: var(--text-subtitle);
+        color: var(text-body);
+    }
+
+    & .mistery{
+        justify-content: space-between;
+        & img[src*="ouija"]{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        & img[src*="crystal"]{
+            width: 72px;
+            height: 72px;
+            object-fit: cover;
+        }
+    }
+}
