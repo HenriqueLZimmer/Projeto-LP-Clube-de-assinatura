@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 5px solid orangered; */
+
+
+    justify-content: center;
 
 }
 
@@ -45,12 +49,13 @@
 
 body{
     background-color: var(--shape-background);
-    display: flex;
-    position: relative;
     border: 5px solid orange;
-    align-items: center;
-    justify-content: center;
+
     text-align: center;
+}
+
+main{
+    justify-content: center;
 }
 
 .flex{

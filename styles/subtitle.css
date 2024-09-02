@@ -1,7 +1,9 @@
 .subtitle{
-    margin-left: -45px;
-    padding-top: 96px;
     width: 1200px;
+
+    margin: 0 auto;
+
+    padding-block: 96px 80px;
 
     & img[src*="opened"]{
         width: 88px;
@@ -21,7 +23,7 @@
     }
 
     & p{
-        padding-inline: 32px;
+        width: 1136px;
         font: var(--text-subtitle);
         color: var(text-body);
     }
@@ -64,7 +66,7 @@
 
 /* Ao passar o mouse no bloco, apenas as imagens ficam visíveis */
 .subtitle:hover img[src*="opened"],
-.subtitle:hover .mistery img[src*="ouija"],
+.subtitle :hover .mistery img[src*="ouija"],
 .subtitle:hover .mistery img[src*="crystal"] {
     opacity: 1;
 }

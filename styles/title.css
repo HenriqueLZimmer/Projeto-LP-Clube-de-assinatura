@@ -1,8 +1,6 @@
 .title{
-    position: relative;
-    margin-left: -170px;
-    margin-top: -650px;
-    margin-bottom: 429px;
+    position: absolute;
+    margin-top: 278px;
 
     h1{
         width: 656px;

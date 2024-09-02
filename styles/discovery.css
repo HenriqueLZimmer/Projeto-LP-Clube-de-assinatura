@@ -1,0 +1,129 @@
+.discovery{
+    margin-top: 235px;
+
+    & .frame{
+        align-items: center;
+    }
+
+    & h2{
+        padding-inline: 16px;
+    }
+
+    & img[src*="star"]{
+
+        object-fit: cover;
+    }
+
+    & span{
+        width: 516px;
+        color:var(--text-body);
+        margin: 0 auto;
+
+        padding-inline: 45px;
+        margin-top: 5px;
+    }
+
+    & .book{
+        position: relative;
+        height: 920px;
+        align-items: center;
+        & img[src*=pin]{
+            position:absolute;
+            margin-top: 569px;
+            margin-right: 500px;
+            width: 222px;
+            height: 254px;
+            object-fit: cover;
+
+            transform: rotate(-8deg);
+
+        }
+
+        & img[src*=book]{
+            position: relative;
+            width: 467px;
+            height: 617px;
+            object-fit: cover;
+
+            z-index: 3;
+
+        }
+
+        & img[src*=bookmark-yellow]{
+            position: absolute;
+            width: 172px;
+            height: 536px;
+            object-fit: cover;
+
+            margin-left: 535px;
+            margin-bottom: 200px;
+
+            transform: rotate(12deg);
+            
+            z-index: 2;
+
+        }
+
+        & img[src*=bookmark-purple]{
+            position: absolute;
+            width: 172px;
+            height: 536px;
+            object-fit: cover;
+
+            margin-left: 760px;
+
+            transform: rotate(22deg);   
+            
+            z-index: 1;
+
+        }
+
+        & .hardcover{
+
+            & span{
+                position: absolute;
+                margin-top: -370px;
+                margin-left: -400px;
+                z-index: 1;
+            }
+
+            & img{
+                position: absolute;
+                margin-top: -330px;
+                margin-left: -150px;
+                
+            }
+        }
+
+        & .brooch{
+
+            & span{
+                position: absolute;
+                margin-top: 20px;
+                margin-left: -400px;
+            }
+
+            & img{
+                position: absolute;
+                margin-top: 70px;
+                margin-left: -180px;
+            }
+
+        }
+
+        & .brand-page{
+
+            & span{
+                position: absolute;
+                margin-top: 420px;
+                margin-left: -200px;
+            }
+
+            & img{
+                position: absolute;
+                margin-top: 250px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
