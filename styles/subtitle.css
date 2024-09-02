@@ -9,6 +9,15 @@
         object-fit: cover;
 
         padding-top: 8.26px;
+
+        transform: rotate(20deg);
+
+        opacity: 0;
+        transition: opacity 0.5s 0.2s ease, transform 0.5s ease;
+    }
+
+    & img[src*="opened"]:hover{
+        transform: rotate(30deg) scale(1.2);
     }
 
     & p{
@@ -19,16 +28,43 @@
 
     & .mistery{
         justify-content: space-between;
+
         & img[src*="ouija"]{
             width: 80px;
             height: 80px;
             object-fit: cover;
+
+            transform: rotate(100deg);
+
+            opacity: 0;
+            transition: opacity 0.5s 0.5s ease, transform 0.5s ease;
+        }
+
+        & img[src*="ouija"]:hover{
+            transform: rotate(110deg) scale(1.2);
         }
 
         & img[src*="crystal"]{
             width: 72px;
             height: 72px;
             object-fit: cover;
+
+            transform: rotate(-20deg);
+
+            opacity: 0;
+            transition: opacity 0.5s 0.8s ease, transform 0.5s ease;
+            
+        }
+
+        & img[src*="crystal"]:hover{
+            transform: rotate(-10deg) scale(1.2);
         }
     }
+}
+
+/* Ao passar o mouse no bloco, apenas as imagens ficam visíveis */
+.subtitle:hover img[src*="opened"],
+.subtitle:hover .mistery img[src*="ouija"],
+.subtitle:hover .mistery img[src*="crystal"] {
+    opacity: 1;
 }
