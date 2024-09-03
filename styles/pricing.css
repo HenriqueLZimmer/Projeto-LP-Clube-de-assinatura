@@ -1,4 +1,6 @@
 .pricing{
+    border: 1px solid white;
+    height: 1234px;
     & .img-background{
         position: absolute;
     }
@@ -75,16 +77,16 @@
     }
 
     & .card{
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     img{
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     & .monthly{
         position: relative;
-        z-index: 1;
+        z-index: 0;
 
         margin-top: 65px;
 
@@ -94,7 +96,7 @@
             object-fit: cover;
             transform: rotate(3deg);
 
-            transition: rotate 0.5s ease;
+            transition: rotate 0.7s ease;
 
             & img:nth-child(2){
                 position: absolute;
@@ -120,7 +122,7 @@
             overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
 
             z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
-            transition: color 0.5s ease; /* Transição de cor do texto se necessário */
+            transition: color 0.7s ease; /* Transição de cor do texto se necessário */
         }
 
         & .price{
@@ -130,7 +132,7 @@
 
     & .semi-annual{
         position: relative;
-        z-index: 2;
+        z-index: 1;
 
         & .bunny{
             position: absolute;
@@ -171,13 +173,13 @@
             overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
 
             z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
-            transition: color 0.5s ease; /* Transição de cor do texto se necessário */
+            transition: color 0.7s ease; /* Transição de cor do texto se necessário */
         }
     }
 
     & .annual{
         position: relative;
-        z-index: 1;
+        z-index: 0;
 
         transform: rotate(8deg);
         margin-top: 65px;
@@ -232,20 +234,21 @@
 }
 
 & .monthly:hover{
+    z-index: 2;
     & .card{
         background-color: var(--shape-hover);
         transform: translateY(-5%);
-        z-index: 1000;    
+          
     }
 
     & img[src*="star"]{
         transform: rotate(30deg);
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     & img:nth-child(1){
         transform: rotate(-30deg);
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     .btn::before {
@@ -258,13 +261,12 @@
 & .semi-annual:hover{
     & .card{
         background-color: var(--shape-hover);
-        transform: translateY(-5%);
-        z-index: ;    
+        transform: translateY(-5%);   
     }
 
     & img[src*="bunny"]{
         transform: translateY(-43%);
-        transition: transform .5s ease;
+        transition: transform 0.7s ease;
     }
 
     .btn::before {
@@ -275,20 +277,20 @@
 }
 
 & .annual:hover{
+    z-index: 2;
     & .card{
         background-color: var(--shape-hover);
-        transform: translateY(-5%);
-        z-index: ;    
+        transform: translateY(-5%);  
     }
 
     & img[src*="star"]{
         transform: rotate(30deg);
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     & img:nth-child(1){
         transform: rotate(-30deg);
-        transition: transform 0.5s ease;
+        transition: transform 0.7s ease;
     }
 
     .btn::before {

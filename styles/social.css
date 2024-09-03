@@ -1,0 +1,59 @@
+a.social{
+    --bg-img:"";
+    background-image: var(--bg-img);
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+
+
+    &[aria-label="instagram"]{
+        --bg-img: url(../assets/icons/instagram.svg);
+
+        &:hover{
+            --bg-img: url(../assets/icons/instagram-hover.svg);
+        }
+    }
+
+    &[aria-label="twitter"]{
+        --bg-img: url(../assets/icons/twitter.svg);
+
+        /* &:hover{
+            --bg-img: url(../assets/icons/twitter-hover.svg);
+        } */
+    }
+
+    &[aria-label="discord"]{
+        --bg-img: url(../assets/icons/discord.svg);
+
+        /* &:hover{
+            --bg-img: url(../assets/icons/discord-hover.svg);
+        } */
+    }
+
+    &[aria-label="whatsapp"]{
+        --bg-img: url(../assets/icons/whatsapp.svg);
+
+        /* &:hover{
+            --bg-img: url(../assets/icons/whatsapp-hover.svg);
+        } */
+    }
+
+    &[aria-label="mail"]{
+        --bg-img: url(../assets/icons/mail.svg);
+
+        /* &:hover{
+            --bg-img: url(../assets/icons/mail-hover.svg);
+        } */
+    }
+
+    &[aria-label="facebook"]{
+        --bg-img: url(../assets/icons/facebook.svg);
+
+        /* &:hover{
+            --bg-img: url(../assets/icons/facebook-hover.svg);
+        } */
+    }
+}

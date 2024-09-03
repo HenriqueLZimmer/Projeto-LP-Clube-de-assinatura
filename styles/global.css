@@ -101,6 +101,15 @@ button{
     cursor: pointer;
 }
 
+.grid{
+    display: grid;
+}
+
+.even-columns{
+    display: grid;
+    gap: 1rem;
+}
+
 /* Utilizado para tirar a marcação da lista, porém é necessário informar que é uma lista para acessibilidade */
 ul[role="list"]{
     list-style: none;
