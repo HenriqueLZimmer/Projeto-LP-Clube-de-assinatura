@@ -61,7 +61,7 @@
         margin-bottom: 12px;
     }
 
-    li::before {
+    li::before{
         content: '';
         position: absolute;
         left: 0; /* Posiciona o ícone à esquerda do texto */
@@ -72,6 +72,14 @@
         -webkit-mask: url('/assets/images/star-pricing.svg') no-repeat center;
         mask: url('/assets/images/star-pricing.svg') no-repeat center;
         background-color: var(--blue-base); /* Cor desejada para o ícone */
+    }
+
+    & .card{
+        transition: transform 0.5s ease;
+    }
+
+    img{
+        transition: transform 0.5s ease;
     }
 
     & .monthly{
@@ -85,6 +93,8 @@
             color: var(--pink-base);
             object-fit: cover;
             transform: rotate(3deg);
+
+            transition: rotate 0.5s ease;
 
             & img:nth-child(2){
                 position: absolute;
@@ -104,7 +114,13 @@
         }
 
         & .btn{
+            position: relative;
             margin-top: 24px;
+
+            overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
+
+            z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
+            transition: color 0.5s ease; /* Transição de cor do texto se necessário */
         }
 
         & .price{
@@ -149,7 +165,13 @@
         }
 
         & .btn{
+            position: relative;
             margin: 0;
+
+            overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
+
+            z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
+            transition: color 0.5s ease; /* Transição de cor do texto se necessário */
         }
     }
 
@@ -163,7 +185,7 @@
         & .star{
             color: var(--pink-base);
             object-fit: cover;
-            transform: rotate(3deg);
+            transform: rotate(3deg);           
 
             & img:nth-child(2){
                 position: absolute;
@@ -183,7 +205,95 @@
         }
 
         & .btn{
+            position: relative;
             margin:0;
+
+            overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
+
+            z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
+            transition: color 0.5s ease; /* Transição de cor do texto se necessário */
         }
+    }
+
+    & .btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        background-color: var(--blue-base);
+        border-radius: 50%;
+        transition: width 0.8s ease, height 0.4s ease, opacity 0.6s ease;
+        transform: translate(-50%, -50%);
+        z-index: -1; /* Garante que o pseudo-elemento esteja abaixo de todo o conteúdo */
+        opacity: 0.6;
+    }
+}
+
+& .monthly:hover{
+    & .card{
+        background-color: var(--shape-hover);
+        transform: translateY(-5%);
+        z-index: 1000;    
+    }
+
+    & img[src*="star"]{
+        transform: rotate(30deg);
+        transition: transform 0.5s ease;
+    }
+
+    & img:nth-child(1){
+        transform: rotate(-30deg);
+        transition: transform 0.5s ease;
+    }
+
+    .btn::before {
+        width: 200%;
+        height: 400%;
+        opacity: 1;
+    }
+}
+
+& .semi-annual:hover{
+    & .card{
+        background-color: var(--shape-hover);
+        transform: translateY(-5%);
+        z-index: ;    
+    }
+
+    & img[src*="bunny"]{
+        transform: translateY(-43%);
+        transition: transform .5s ease;
+    }
+
+    .btn::before {
+        width: 200%;
+        height: 400%;
+        opacity: 1;
+    }
+}
+
+& .annual:hover{
+    & .card{
+        background-color: var(--shape-hover);
+        transform: translateY(-5%);
+        z-index: ;    
+    }
+
+    & img[src*="star"]{
+        transform: rotate(30deg);
+        transition: transform 0.5s ease;
+    }
+
+    & img:nth-child(1){
+        transform: rotate(-30deg);
+        transition: transform 0.5s ease;
+    }
+
+    .btn::before {
+        width: 200%;
+        height: 400%;
+        opacity: 1;
     }
 }
