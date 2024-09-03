@@ -1,5 +1,5 @@
 header{
-    height: 948px;
+    height: 59.25rem;
 
     & .img-background{
         position: absolute;
@@ -9,29 +9,29 @@ header{
     & .header{
         position: relative;
 
-        width: 1120px;
-        height: 58px;
-        margin-top: 56px;
+        width: 70rem;
+        height: 3.625rem;
+        margin-top: 3.5rem;
 
         justify-content: space-between;
         align-items: center;
 
         & img{
-            width: 230px;
-            height: 58px;
+            width: 14.375rem;
+            height: 3.625rem;
         }
 
         & .btn{
             position: relative;
-            height: 40px;
-            border-radius: 8px;
+            height: 2.5rem;
+            border-radius: 0.5rem;
             overflow: hidden; /* Esconde o pseudo-elemento que sai dos limites do botão */
 
             font: var(--body-sm);
             color: var(--text-title);
             background-color: var(--pink-dark);
 
-            padding: 12px 20px;
+            padding: 0.75rem 1.25rem;
 
             z-index: 1; /* Mantém o conteúdo do botão acima do pseudo-elemento */
             transition: color 0.5s ease; /* Transição de cor do texto se necessário */

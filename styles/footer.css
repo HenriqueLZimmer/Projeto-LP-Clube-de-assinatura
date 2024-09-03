@@ -1,26 +1,26 @@
 footer{
-    height: 25.93rem;
+    height: 25.9375rem;
     & .footer-background{
         position: absolute;
         text-align: center;
-        height: 25.93rem;
+        height: 25.9375rem;
         width: 100%;
         z-index: -1;
     }
 
     & .brand{
-        margin-top: 170px;
+        margin-top: 10.625rem;
     }
 
     & .line{
-        width: 264px;
+        width: 16.5rem;
         height: 0;
-        border: 1px solid var(--shape-stroke);
+        border: 0.0625rem solid var(--shape-stroke);
     }
 
     & img[src*="logo-horizontal"]{
-        width: 264px;
-        height: 66.57px;
+        width: 16.5rem;
+        height: 4.1606rem;
     }
 
     & .bottom{
@@ -29,24 +29,24 @@ footer{
     }
 
     & nav{
-        margin-top: 170px;
-        margin-left: 544px;
+        margin-top: 10.625rem;
+        margin-left: 34rem;
     }
 
     & ul{
         text-align: start;
-        margin-left: 56px;
+        margin-left: 3.5rem;
         & li:first-child{
             font: var(--text-xs);
             color: var(--text-body);
-            margin-bottom: 20px;
+            margin-bottom: 1.25rem;
         }
         & a{
             font: var(--text-link);
             color: var(--blue-light);
         }
         & li{
-            margin-bottom: 12px;
+            margin-bottom: 0.75rem;
         }
 
         & a:hover{

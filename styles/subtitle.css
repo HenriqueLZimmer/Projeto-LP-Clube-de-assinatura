@@ -1,16 +1,16 @@
 .subtitle{
-    width: 1200px;
+    width: 75rem;
 
     margin: 0 auto;
 
-    padding-block: 96px 80px;
+    padding-block: 6rem 5rem;
 
     & img[src*="opened"]{
-        width: 88px;
-        height: 88px;
+        width: 5.5rem;
+        height: 5.5rem;
         object-fit: cover;
 
-        padding-top: 8.26px;
+        padding-top: 0.5162rem;
 
         transform: rotate(20deg);
 
@@ -23,7 +23,7 @@
     }
 
     & p{
-        width: 1136px;
+        width: 71rem;
         font: var(--text-subtitle);
         color: var(text-body);
     }
@@ -32,8 +32,8 @@
         justify-content: space-between;
 
         & img[src*="ouija"]{
-            width: 80px;
-            height: 80px;
+            width: 5rem;
+            height: 5rem;
             object-fit: cover;
 
             transform: rotate(100deg);
@@ -47,8 +47,8 @@
         }
 
         & img[src*="crystal"]{
-            width: 72px;
-            height: 72px;
+            width: 4.5rem;
+            height: 4.5rem;
             object-fit: cover;
 
             transform: rotate(-20deg);

@@ -1,14 +1,14 @@
 .discovery{
-    margin-top: 235px;
+    margin-top: 14.6875rem;
 
-    padding-bottom: 313px;
+    padding-bottom: 19.5625rem;
 
     & .frame{
         align-items: center;
     }
 
     & h2{
-        padding-inline: 16px;
+        padding-inline: 1rem;
     }
 
     & img[src*="star"]{
@@ -17,24 +17,24 @@
     }
 
     & span{
-        width: 516px;
+        width: 32.25rem;
         color:var(--text-body);
         margin: 0 auto;
 
-        padding-inline: 45px;
-        margin-top: 5px;
+        padding-inline: 2.8125rem;
+        margin-top: 0.3125rem;
     }
 
     & .book{
         position: relative;
-        height: 920px;
+        height: 57.5rem;
         align-items: center;
         & img[src*=pin]{
             position:absolute;
-            margin-top: 569px;
-            margin-right: 500px;
-            width: 222px;
-            height: 254px;
+            margin-top: 35.5625rem;
+            margin-right: 31.25rem;
+            width: 13.875rem;
+            height: 15.875rem;
             object-fit: cover;
 
             transform: rotate(-8deg);
@@ -44,8 +44,8 @@
 
         & img[src*=book]{
             position: relative;
-            width: 467px;
-            height: 617px;
+            width: 29.1875rem;
+            height: 38.5625rem;
             object-fit: cover;
 
             z-index: 3;
@@ -54,12 +54,12 @@
 
         & img[src*=bookmark-yellow]{
             position: absolute;
-            width: 172px;
-            height: 536px;
+            width: 10.75rem;
+            height: 33.5rem;
             object-fit: cover;
 
-            margin-left: 535px;
-            margin-bottom: 200px;
+            margin-left: 33.4375rem;
+            margin-bottom: 12.5rem;
             opacity: 0;
 
             transform: rotate(0);
@@ -70,11 +70,11 @@
 
         & img[src*=bookmark-purple]{
             position: absolute;
-            width: 172px;
-            height: 536px;
+            width: 10.75rem;
+            height: 33.5rem;
             object-fit: cover;
 
-            margin-left: 760px;
+            margin-left: 47.5rem;
 
             opacity: 0;
 
@@ -88,20 +88,20 @@
             opacity: 0;
             & span{
                 position: absolute;
-                margin-top: -370px;
-                margin-left: -400px;
+                margin-top: -23.125rem;
+                margin-left: -25rem;
                 z-index: 1;
 
-                transform: translate(270px,100px);
+                transform: translate(16.875rem,6.25rem);
                 
             }
 
             & img{
                 position: absolute;
-                margin-top: -330px;
-                margin-left: -150px;
+                margin-top: -20.625rem;
+                margin-left: -9.375rem;
 
-                transform: translate(200px,60px);
+                transform: translate(12.5rem,3.75rem);
                 z-index: 1;
                 
             }
@@ -111,14 +111,14 @@
             opacity: 0;
             & span{
                 position: absolute;
-                margin-top: 20px;
-                margin-left: -400px;
+                margin-top: 1.25rem;
+                margin-left: -25rem;
             }
 
             & img{
                 position: absolute;
-                margin-top: 70px;
-                margin-left: -180px;
+                margin-top: 4.375rem;
+                margin-left: -11.25rem;
             }
 
         }
@@ -127,15 +127,15 @@
             opacity: 0;
             & span{
                 position: absolute;
-                margin-top: 420px;
-                margin-left: -200px;
+                margin-top: 26.25rem;
+                margin-left: -12.5rem;
 
             }
 
             & img{
                 position: absolute;
-                margin-top: 250px;
-                margin-left: 30px;
+                margin-top: 15.625rem;
+                margin-left: 1.875rem;
 
             }
         }
@@ -164,7 +164,7 @@
 
     & img[src*=pin]{
         opacity: 1;
-        transform: translate(160px, -80px);
+        transform: translate(10rem, -5rem);
     
         animation: slideIn-pin 1700ms ease both, rotate-pin 800ms both;
     
@@ -208,7 +208,7 @@
 
 @keyframes slideIn{
     50%{
-        transform: translate(-20px);
+        transform: translate(-1.25rem);
     }
     100%{
         transform: translate(0);
@@ -217,7 +217,7 @@
 
 @keyframes slideIn-pin{
     50%{
-        transform: translate(10px);
+        transform: translate(0.625rem);
     }
     100%{
         transform: translate(0);
@@ -244,7 +244,7 @@
 
 @keyframes handcover-name {
     0% {
-        transform: translate(270px, 100px);
+        transform: translate(16.875rem, 6.25rem);
     }
 
     100% {
@@ -254,7 +254,7 @@
 
 @keyframes handcover-arrow{
     0%{
-        transform: translate(200px,60px);
+        transform: translate(12.5rem,3.75rem);
     }
 
     100%{
@@ -264,7 +264,7 @@
 
 @keyframes brooch-name{
     0%{
-        transform: translate(270px,-60px);
+        transform: translate(16.875rem,-3.75rem);
     }
     100%{
         transform: translate(0,0);
@@ -273,7 +273,7 @@
 
 @keyframes brooch-arrow{
     0%{
-        transform: translate(240px,-150px);
+        transform: translate(15rem,-9.375rem);
     }
     100%{
         transform: translate(0,0);
@@ -282,22 +282,22 @@
 
 @keyframes brand-name{
     0%{
-        transform: translate(-200px,-290px);
+        transform: translate(-12.5rem,-18.125rem);
         /* transform: translate(0,0); */
     }
     100%{
         transform: translate(0,0);
-        /* transform: translate(-200px,-290px); */
+        /* transform: translate(-12.5rem,-18.125rem); */
     }
 }
 
 @keyframes brand-arrow{
     0%{
-        transform: translate(-200px,-290px);
+        transform: translate(-12.5rem,-18.125rem);
         /* transform: translate(0,0); */
     }
     100%{
         transform: translate(0,0);
-        /* transform: translate(-200px,-290px); */
+        /* transform: translate(-12.5rem,-18.125rem); */
     }
 }
