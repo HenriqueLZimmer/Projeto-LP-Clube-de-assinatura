@@ -45,6 +45,7 @@
     --body-sm: 700 0.875rem/1.4 var(--ff-base);
     --body-md: 700 1rem/1.4 var(--ff-base);
     --body-lg: 700 1.25rem/1.4 var(--ff-base);
+    --body-pricing: 400 0.75rem/1.4 var(--ff-base)
 }
 
 body{
@@ -98,6 +99,11 @@ p{
 button{
     border: none;
     cursor: pointer;
+}
+
+/* Utilizado para tirar a marcação da lista, porém é necessário informar que é uma lista para acessibilidade */
+ul[role="list"]{
+    list-style: none;
 }
 
 @media (width < 80em){

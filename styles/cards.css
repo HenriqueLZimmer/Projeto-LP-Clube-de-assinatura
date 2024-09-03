@@ -1,0 +1,20 @@
+.card{
+    width: 288px;
+    height: 416px;
+
+    background-color: var(--shape-base);
+    border: 2px solid var(--shape-stroke);
+    border-radius: 24px;
+
+    padding-inline: 32px;
+
+    .btn{
+        padding: 12px 52.5px;
+        border-radius: 8px;
+        background-color: var(--blue-dark);
+        color: var(--text-title);
+        font: var(--text-button);
+
+        margin-block: 24px 28px;
+    }
+}
