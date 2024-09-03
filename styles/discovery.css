@@ -36,6 +36,7 @@
             object-fit: cover;
 
             transform: rotate(-8deg);
+            opacity: 0;
 
         }
 
@@ -82,24 +83,30 @@
         }
 
         & .hardcover{
-
+            opacity: 0;
             & span{
                 position: absolute;
                 margin-top: -370px;
                 margin-left: -400px;
                 z-index: 1;
+
+                transform: translate(270px,100px);
+                
             }
 
             & img{
                 position: absolute;
                 margin-top: -330px;
                 margin-left: -150px;
+
+                transform: translate(200px,60px);
+                z-index: 1;
                 
             }
         }
 
         & .brooch{
-
+            opacity: 0;
             & span{
                 position: absolute;
                 margin-top: 20px;
@@ -115,40 +122,85 @@
         }
 
         & .brand-page{
-
+            opacity: 0;
             & span{
                 position: absolute;
                 margin-top: 420px;
                 margin-left: -200px;
+
             }
 
             & img{
                 position: absolute;
                 margin-top: 250px;
                 margin-left: 30px;
+
             }
         }
     }
 }
 
-.discovery:hover img[src*=bookmark-yellow]{
-    opacity: 1;
-    transform: translate(-100%, 20%);
+.discovery:hover{
+    & img[src*=bookmark-yellow]{
+        opacity: 1;
+        transform: translate(-100%, 20%);
+    
+        animation: slideIn 1200ms ease both, rotate 1s both;
+    
+    
+        z-index: 2;
+    }
 
-    animation: slideIn 1s ease both, rotate 500ms both;
+    & img[src*=bookmark-purple]{
+        opacity: 1;
+        transform: translate(-100%, 10%);
+    
+        animation: slideIn 1200ms ease both, rotate-purple 1s both;
 
+        z-index: 1;
+    }
 
-    z-index: 2;
-}
+    & img[src*=pin]{
+        opacity: 1;
+        transform: translate(160px, -80px);
+    
+        animation: slideIn-pin 1700ms ease both, rotate-pin 800ms both;
+    
+    }
 
-.discovery:hover img[src*=bookmark-purple]{
-    opacity: 1;
-    transform: translate(-100%, 10%);
+    .hardcover{
+        opacity: 1;
+        & span{
+            animation: handcover-name 900ms ease both;
+        }
+    
+        & img{
+            animation: handcover-arrow 1s ease both;
+        }
+    }
 
-    animation: slideIn 1s ease both, rotate-purple 500ms both;
+    .brooch{
+        opacity: 1;
+    
+        & span{
+            animation: brooch-name 900ms ease both;
+        }
 
+        & img{
+            animation: brooch-arrow 1s ease both;
+        }
+    }
 
-    z-index: 1;
+    .brand-page{
+        opacity: 1;
+    
+        & span{
+            animation: brand-name 900ms ease both;
+        }
+        & img{
+            animation: brand-arrow 1s ease both;
+        }
+    }
 }
 
 
@@ -161,9 +213,18 @@
     }
 }
 
-@keyframes appear{
+@keyframes slideIn-pin{
+    50%{
+        transform: translate(10px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes rotate-pin{
     to{
-        opacity: 1;
+        transform: rotate(-8deg);
     }
 }
 
@@ -179,4 +240,62 @@
     }
 }
 
+@keyframes handcover-name {
+    0% {
+        transform: translate(270px, 100px);
+    }
 
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes handcover-arrow{
+    0%{
+        transform: translate(200px,60px);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes brooch-name{
+    0%{
+        transform: translate(270px,-60px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes brooch-arrow{
+    0%{
+        transform: translate(240px,-150px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes brand-name{
+    0%{
+        transform: translate(-200px,-290px);
+        /* transform: translate(0,0); */
+    }
+    100%{
+        transform: translate(0,0);
+        /* transform: translate(-200px,-290px); */
+    }
+}
+
+@keyframes brand-arrow{
+    0%{
+        transform: translate(-200px,-290px);
+        /* transform: translate(0,0); */
+    }
+    100%{
+        transform: translate(0,0);
+        /* transform: translate(-200px,-290px); */
+    }
+}
