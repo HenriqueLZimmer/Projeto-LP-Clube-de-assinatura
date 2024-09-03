@@ -1,5 +1,4 @@
 .pricing{
-    border: 1px solid white;
     height: 1234px;
     & .img-background{
         position: absolute;
@@ -51,11 +50,7 @@
     li{
         position: relative;
         text-align: start;
-        /* background: url(/assets/images/star-pricing.svg) no-repeat; */
-        /* -webkit-mask: url('/assets/images/star-pricing.svg') no-repeat left center;
-        mask: url('/assets/images/star-pricing.svg') no-repeat left center;
-        background-color: var(--blue-base); A cor desejada */
-        padding-left: 24px; /* Ajustar o padding para compensar a área da máscara */
+        padding-left: 24px;
         font: var(--body-pricing);
         color: var(--text-body);
 

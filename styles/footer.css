@@ -1,34 +1,56 @@
 footer{
-    border: 1px solid red;
-
-    img[src*="trace"]{
-        border: 1px solid wheat;
-        width: 1440px;
-        height: 415px;
-
+    height: 25.93rem;
+    & .footer-background{
         position: absolute;
+        text-align: center;
+        height: 25.93rem;
+        width: 100%;
+        z-index: -1;
     }
-    img[src*="logo-horizontal"]{
 
+    & .brand{
+        margin-top: 170px;
+    }
+
+    & .line{
+        width: 264px;
+        height: 0;
+        border: 1px solid var(--shape-stroke);
+    }
+
+    & img[src*="logo-horizontal"]{
         width: 264px;
         height: 66.57px;
-        position: relative;
     }
 
-    & .title{
-        position: relative;
-        font: var(--text-xs);
-        color: var(--text-body);
-    }
-    & a{
-        position: relative;
-        font: var(--text-link);
-        color: var(--blue-light);
+    & .bottom{
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .container{
-        margin-inline: auto;
-        gap: 3rem;
-        padding-inline: 3rem;
+    & nav{
+        margin-top: 170px;
+        margin-left: 544px;
+    }
+
+    & ul{
+        text-align: start;
+        margin-left: 56px;
+        & li:first-child{
+            font: var(--text-xs);
+            color: var(--text-body);
+            margin-bottom: 20px;
+        }
+        & a{
+            font: var(--text-link);
+            color: var(--blue-light);
+        }
+        & li{
+            margin-bottom: 12px;
+        }
+
+        & a:hover{
+            color: var(--text-body);
+        }
     }
 }

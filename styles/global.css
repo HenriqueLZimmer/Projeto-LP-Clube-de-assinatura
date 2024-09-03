@@ -50,7 +50,6 @@
 
 body{
     background-color: var(--shape-background);
-    border: 5px solid orange;
 
     text-align: center;
 }
